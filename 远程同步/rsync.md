@@ -48,8 +48,17 @@ vim /etc/rsyncd.conf
 [appName]
 path = /serverPath/dirName
 log file = /var/log/rsync.log
+;comment = 共享给客户端看的信息，可自定义
+;auth users = userName1,userName2
+;secrets file = /etc/rsyncd.secrets
+;read only = false
+;uid = 0 // 代表root
+;gid = 0 // 代表root
 -----------------------------------
 rsync --daemon
+
+> 关闭程序
+pkill -9 rsync
 
 > 客户端拉取
 - 查看服务端提供的同步模块
