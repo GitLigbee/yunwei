@@ -7,8 +7,11 @@
 - 开启服务[centos]
 `systemctl start sshd`
 
+- 重启服务[centos]
+`systemctl restart sshd`
+
 - 开机自启[centos]
-`systenctl enable sshd`
+`systemctl enable sshd`
 
 - 登录
 ```
@@ -22,7 +25,13 @@ ssh -l userName ip -p 22
 ```
 vim /etc/ssh/sshd_config
 ;禁止root远程登录
+PermitRootLogin yes
+
 ;修改默认端口
+Port 22
+
+;不允许密码登陆
+PasswordAuthentication no
 ```
 
 - 生成密钥对
