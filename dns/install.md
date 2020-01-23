@@ -1,7 +1,7 @@
 ### install
 
 > instruction
-域名解析服务，提供正向解析[域名->ip],反向解析[ip->域名]，其配置又称为A记录
+域名解析服务，提供正向解析[域名->ip],其配置又称为A记录;反向解析[ip->域名]，其配置又称为PTR记录
 
 ### install step
 1. 关闭防火墙
@@ -72,6 +72,7 @@ $TTL 1D ;缓存时间1天
         NS      serve.dnstest.com. ;NS代表nameserver,前两行必须指定dns服务的IP
 serve   A       192.168.1.100
 hello   A       192.168.1.100 ;解析hello.dnstest.com
+hi      CNAME   hello.dnstest.com. ;hi.dnstest.com会被解析为hello.dnstest.com
 ```
 > vim 1.168.192.zone
 ```
