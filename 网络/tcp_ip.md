@@ -11,3 +11,4 @@ IP数据包：IP头部＋TCP数据信息（IP头包括源和目标主机IP地址
 解封装：上述的逆向过程
 
 - 当数据以TCP/IP协议传输时的封装与街封装过程如下图：
+![pic](https://m.qpic.cn/psc?/V53fQItE1IbEAS1mwOTY1xSqBj2RqS6f/ruAMsa53pVQWN7FLK88i5uSDOhGZk*jmNvrKqQjnGpsODFSDpa9XdZ0jTZFQojrCPxU4oQBrUSVH*PJ5P4YfCTdho6ZYG7M3mOScr*9O6Zc!/mnull&bo=7QLdAQAAAAADBxE!&rf=photolist&t=5)
